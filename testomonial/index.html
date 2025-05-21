@@ -146,6 +146,115 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
 <link rel="icon" href="../wp-content/uploads/2024/02/indian-armour-logo.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="../wp-content/uploads/2024/02/indian-armour-logo.png" />
 <meta name="msapplication-TileImage" content="https://bracketweb.com/tolakwp/wp-content/uploads/2024/02/indian-armour-logo.png" />
+
+<style>
+  /* Reset some default styles */
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .grid-item:hover,
+  .grid-item:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+
+  .image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+	height: 260px;
+    justify-content: center;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    transition: transform 0.3s ease;
+    height: auto;
+  }
+
+  .grid-item:hover img,
+  .grid-item:focus-within img {
+    transform: scale(1.05);
+  }
+
+  .title {
+    padding: 0.75rem 1rem;
+    flex-grow: 1;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #222222af;
+    text-align: center;
+    border-top: 1px solid #eee;
+
+  }
+
+  /* Responsive columns: 3 columns default, 2 columns medium, 1 column small */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      max-width: 90vw;
+    }
+    body {
+      padding: 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .title {
+      font-size: 1rem;
+      padding: 0.6rem 0.8rem;
+    }
+    .image-wrapper img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 95vw;
+    }
+    body {
+      padding: 1rem;
+    }
+    .image-wrapper img {
+      max-width: 100%;
+    }
+  }
+
+
+
+</style>
 </head>
 
 <body class="page-template page-template-elementor_header_footer page page-id-1276 theme-tolak woocommerce-no-js custom-cursor woocommerce-active elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-1276">
@@ -349,256 +458,107 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
 					<span class="sec-title__tagline__left"></span> Our Clients<span class="sec-title__tagline__right"></span>
 				</h6><!-- /.sec-title__tagline -->
 				<h3 class="sec-title__title">Meet Our Top Clients</h3>			</div><!-- /.sec-title -->
-			<div class="team-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel" data-owl-options='        {
-        &quot;loop&quot;: true,
-        &quot;margin&quot;: 0,
-        &quot;items&quot;: 1        ,&quot;nav&quot;: false                    ,&quot;autoplay&quot;: true            ,&quot;autoplayTimeout&quot;: 5000                            ,&quot;animateOut&quot;: &quot;&quot;
-            ,&quot;animateIn&quot;: &quot;&quot;
-                            ,&quot;autoplayHoverPause&quot;: true                        ,&quot;dots&quot;: true        ,&quot;smartSpeed&quot;: 700
-                    ,
-            &quot;responsive&quot;:
-            {
-                            &quot;0&quot;: {
-                &quot;margin&quot;: 0,
-                &quot;items&quot;: 1                },                            &quot;768&quot;: {
-                &quot;margin&quot;: 30,
-                &quot;items&quot;: 2                },                            &quot;992&quot;: {
-                &quot;margin&quot;: 30,
-                &quot;items&quot;: 3                }                        }
-                }
-    '>
-									<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/gem-logo.jpg" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-											
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									GEM
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation">Made In India</p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
-									<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="https://pawealth.in/wp-content/uploads/2023/10/Srock-Research-Blog-Thumbnails-1024x576.png" alt="team-1-2" title="team-1-2" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-											
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									 Enduarance
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
-									<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUkPFC4YO4KiTthlEQDU_Mpp87CVJ3iv7YA&s" alt="team-1-3" title="team-1-3" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-											
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									<a href="../team-details/index.html">RR Kabel</a>
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation">Wires & Cables</p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
-									<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="https://tataprojects.com//web/sites/default/files/2024-07/Tata-Projects-logo-media-kit.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Tata Projects
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+		
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/veeline-logo.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Veeline Media Ltd
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+<div class="grid-container" role="list">
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/gem-logo.jpg" alt="Mountains at sunset" />
+    </div>
+    <div class="title">GEM</div>
+  </div>
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/veeline-logo.png" alt="Forest in the mist" />
+    </div>
+    <div class="title">Veeline</div>
+  </div>
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/tata logo (1).jpg" alt="Ocean waves" />
+    </div>
+    <div class="title">Tata Projects</div>
+  </div>
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/RR logo (1).png" alt="City skyline at night" />
+    </div>
+    <div class="title">RR Kabel </div>
+  </div>
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/kvs-logo.png" alt="Desert dunes" />
+    </div>
+    <div class="title">KVS</div>
+  </div>
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/msu logo (1).png" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">MSU University</div>
+  </div>
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/unicure-logo.webp" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Unicure
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/nkg logo (1).png" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">NKG</div>
+  </div>
 
-						<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/voltamp-logo.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Voltamp Transformers Ltd.
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/haier logo (1).webp" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Haier</div>
+  </div>
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/kvs-logo.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									KVS
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/satyam-logo.png" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Satyam Auto Components</div>
+  </div>
 
-						<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/Indian-Army-Logo (1).webp" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Indian Army
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/unicure-logo.webp" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Unicure</div>
+  </div>
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/msu logo (1).png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									MSU University
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/voltamp-logo.png" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Voltamp</div>
+  </div>
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/nkg logo (1).png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									NKG Infrastructure
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/Indian-Army-Logo (1).webp" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Indian Army</div>
+  </div>
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/raj.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Raj Filters
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
+  <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/raj.png" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Raj Filters</div>
+  </div>
 
-					<div class="item">
-						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-							<div class="team-card__image" style="min-height: 330px;">
-								<img decoding="async" src="../wp-content/uploads/2024/02/satyam-logo.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
-							<div class="team-card__content">
-																	<div class="team-card__hover">
-										<div class="team-card__social">
-								
-										</div><!-- /.team-card__social -->
-									</div><!-- /.team-card__hover -->
-																<h3 class="team-card__title">
-									Satyam Auto Components
-								</h3><!-- /.team-card__title -->
-								<p class="team-card__designation"></p><!-- /.team-card__designation -->
-							</div><!-- /.team-card__content -->
-						</div><!-- /.team-card -->
-					</div><!-- /.item -->
-									
-							</div><!-- /.row -->
+    <div class="grid-item" role="listitem" tabindex="0">
+    <div class="image-wrapper">
+      <img src="../wp-content/uploads/2024/02/lisega logo (1).webp" alt="Snowy mountain peaks" />
+    </div>
+    <div class="title">Lisega</div>
+  </div>
+
+</div>
+
+
+
+
 		</div><!-- /.container -->
 	</section><!-- /.team-one -->
 	<!-- Team Style One End -->

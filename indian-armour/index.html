@@ -153,6 +153,78 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
             display: none;
         }
     }
+
+  .download-section {
+    background-color: #3d72fc;
+    color: white;
+    max-width: 84%;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(61, 114, 252, 0.3);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    justify-self: center;
+  }
+
+  .download-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    user-select: none;
+    flex: 1 1 auto;
+    color: white;
+  }
+
+  .download-button {
+    background: white;
+    color: #3d72fc;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(61, 114, 252, 0.4);
+    display: inline-block;
+  }
+  .download-button:hover,
+  .download-button:focus {
+    background-color: #365dcc;
+    color: white;
+    outline: none;
+    box-shadow: 0 6px 20px rgba(54, 93, 204, 0.7);
+  }
+  .download-button:active {
+    transform: scale(0.97);
+  }
+
+  @media (max-width: 600px) {
+    .download-section {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      padding: 20px;
+      text-align: center;
+    }
+    .download-title {
+      font-size: 1.3rem;
+      flex: none;
+      margin: 0;
+    }
+    .download-button {
+      width: 100%;
+      padding: 14px 0;
+      font-size: 1.1rem;
+    }
+  }
+
 </style>
 </head>
 
@@ -411,50 +483,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
 				<div class="elementor-element elementor-element-382b4323 elementor-widget elementor-widget-tolak-funfact" data-id="382b4323" data-element_type="widget" data-widget_type="tolak-funfact.default">
 				<div class="elementor-widget-container">
 			
-    <!-- funfact two -->
-    <section class="funfact-two">
-        <div class="container">
-            <ul class="list-unstyled funfact-two__list">
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class="icon-briefing"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="426" data-speed="1500"></span> k</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Completed Project</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class=" icon-ancestors"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="1425" data-speed="1500"></span> k</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Happy Clients</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class=" icon-admin"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="750" data-speed="1500"></span> +</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Business Partners</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class=" icon-trophy"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="884" data-speed="1500"></span> k</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Award Win</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                            </ul><!-- /.list-unstyled funfact-two__list -->
-        </div><!-- /.container -->
-    </section><!-- /.funfact-two -->
-    <!-- funfact two -->
+   
 
 		</div>
 				</div>
@@ -698,6 +727,25 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
         </div><!-- /.container -->
     </section><!-- /.about-three -->
     <!-- Our Core Values End -->
+
+    <!-- Download Section Start -->
+
+  <section class="download-section" aria-label="File Download Section">
+    <h2 class="download-title">Download Company Profile</h2>
+    <a 
+      href="../wp-content/uploads/2024/ias.pdf" 
+      download="ias.pdf" 
+      class="download-button"
+      role="button"
+      aria-label="Download Dummy PDF file"
+    >
+      Download
+    </a>
+  </section>
+
+    <!-- Download Section End -->
+
+
 
 		</div>
 				</div>

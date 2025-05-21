@@ -153,6 +153,77 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
             display: none;
         }
     }
+
+      .download-section {
+    background-color: #3d72fc;
+    color: white;
+    max-width: 84%;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(61, 114, 252, 0.3);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    justify-self: center;
+  }
+
+  .download-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    user-select: none;
+    flex: 1 1 auto;
+    color: white;
+  }
+
+  .download-button {
+    background: white;
+    color: #3d72fc;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(61, 114, 252, 0.4);
+    display: inline-block;
+  }
+  .download-button:hover,
+  .download-button:focus {
+    background-color: #365dcc;
+    color: white;
+    outline: none;
+    box-shadow: 0 6px 20px rgba(54, 93, 204, 0.7);
+  }
+  .download-button:active {
+    transform: scale(0.97);
+  }
+
+  @media (max-width: 600px) {
+    .download-section {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      padding: 20px;
+      text-align: center;
+    }
+    .download-title {
+      font-size: 1.3rem;
+      flex: none;
+      margin: 0;
+    }
+    .download-button {
+      width: 100%;
+      padding: 14px 0;
+      font-size: 1.1rem;
+    }
+  }
 </style>
 </head>
 
@@ -362,7 +433,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
                                     <img decoding="async" src="https://assets1.hospitalitytech.com/images/v/max_width_1440/2022-05/shutterstock_1628546512.jpg" alt="about-3-1" title="about-3-1" >                                </div>
                                 <div class="about-three__fact count-box">
                                     <div class="about-three__fact__icon"><i class="icon-check-mark"></i></div>
-                                    <h3 class="about-three__fact__count"><span class="count-text" data-stop="1000
+                                    <h3 class="about-three__fact__count"><span class="count-text" data-stop="200
 " data-speed="1500"></span>+</h3><!-- /.about-three__fact__number -->
                                     <p class="about-three__fact__text"> Employees</p><!-- /.about-three__fact__title -->
                                 </div><!-- /.about-three__fact -->
@@ -416,51 +487,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
 				<div class="elementor-element elementor-element-382b4323 elementor-widget elementor-widget-tolak-funfact" data-id="382b4323" data-element_type="widget" data-widget_type="tolak-funfact.default">
 				<div class="elementor-widget-container">
 			
-    <!-- funfact two -->
-    <section class="funfact-two">
-        <div class="container">
-            <ul class="list-unstyled funfact-two__list">
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class="icon-briefing"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="426" data-speed="1500"></span> k</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Completed Project</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class=" icon-ancestors"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="1425" data-speed="1500"></span> k</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Happy Clients</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class=" icon-admin"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="750" data-speed="1500"></span> +</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Business Partners</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                                    <li class="funfact-two__item count-box">
-                        <div class="funfact-two__icon">
-                            <i aria-hidden="true" class=" icon-trophy"></i>                        </div><!-- /.funfact-two__icon -->
-                        <div class="funfact-two__content">
-                            <h3 class="funfact-two__count"><span class="count-text" data-stop="884" data-speed="1500"></span> k</h3>
-                            <!-- /.funfact-two__count -->
-                            <p class="funfact-two__text">Award Win</p><!-- /.funfact-two__text -->
-                        </div><!-- /.funfact-two__content -->
-                    </li><!-- /.funfact-two__item -->
-                            </ul><!-- /.list-unstyled funfact-two__list -->
-        </div><!-- /.container -->
-    </section><!-- /.funfact-two -->
-    <!-- funfact two -->
-
+   
 		</div>
 				</div>
 				</div>
@@ -696,6 +723,197 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
     </section><!-- /.about-three -->
     <!-- Our Core Values End -->
 
+    <!-- Team Style One Start -->
+	<section class="team-one">
+		<div class="container">
+			<div class="sec-title text-center">
+				<h6 class="sec-title__tagline">
+					<span class="sec-title__tagline__left"></span> Our Clients<span class="sec-title__tagline__right"></span>
+				</h6><!-- /.sec-title__tagline -->
+				<h3 class="sec-title__title">Meet Our Top Clients</h3>			</div><!-- /.sec-title -->
+			<div class="team-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel" data-owl-options='        {
+        &quot;loop&quot;: true,
+        &quot;margin&quot;: 0,
+        &quot;items&quot;: 1        ,&quot;nav&quot;: false                    ,&quot;autoplay&quot;: true            ,&quot;autoplayTimeout&quot;: 5000                            ,&quot;animateOut&quot;: &quot;&quot;
+            ,&quot;animateIn&quot;: &quot;&quot;
+                            ,&quot;autoplayHoverPause&quot;: true                        ,&quot;dots&quot;: true        ,&quot;smartSpeed&quot;: 700
+                    ,
+            &quot;responsive&quot;:
+            {
+                            &quot;0&quot;: {
+                &quot;margin&quot;: 0,
+                &quot;items&quot;: 1                },                            &quot;768&quot;: {
+                &quot;margin&quot;: 30,
+                &quot;items&quot;: 2                },                            &quot;992&quot;: {
+                &quot;margin&quot;: 30,
+                &quot;items&quot;: 3                }                        }
+                }
+    '>
+									<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="../wp-content/uploads/2024/02/gem-logo.jpg" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+											
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									GEM
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation">Made In India</p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+									<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="https://pawealth.in/wp-content/uploads/2023/10/Srock-Research-Blog-Thumbnails-1024x576.png" alt="team-1-2" title="team-1-2" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+											
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									 Enduarance
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+							
+									<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="https://tataprojects.com//web/sites/default/files/2024-07/Tata-Projects-logo-media-kit.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+								
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									Tata Projects
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="../wp-content/uploads/2024/02/unicure-logo.webp" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+								
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									Unicure
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="../wp-content/uploads/2024/02/raj.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+								
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									Raj Filters
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+
+					<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="../wp-content/uploads/2024/02/satyam-logo.png" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+								
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									Satyam Auto Components
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+
+                    					<div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="https://media.licdn.com/dms/image/v2/C4D0BAQH4vXuXnUUYSg/company-logo_200_200/company-logo_200_200/0/1630558123794/lisega_se_logo?e=2147483647&v=beta&t=-d70mNVIi2k0mS3jlZj90D6r7jcVHJEDpqPkJXqFnLk" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+								
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									Lisega
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+
+                    <div class="item">
+						<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+							<div class="team-card__image" style="min-height: 330px;">
+								<img decoding="async" src="https://media.licdn.com/dms/image/v2/C510BAQFZxo2t1mzfRQ/company-logo_200_200/company-logo_200_200/0/1630580422612/retail_scan_management_serviced_pvt__ltd__logo?e=2147483647&v=beta&t=12V5KxL9kcEGrFybSVxrKmY3zqSrMucWc1tJohhF9uQ" alt="team-1-1" title="team-1-1" >							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+																	<div class="team-card__hover">
+										<div class="team-card__social">
+								
+										</div><!-- /.team-card__social -->
+									</div><!-- /.team-card__hover -->
+																<h3 class="team-card__title">
+									Retail Scan
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation"></p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.item -->
+									
+							</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.team-one -->
+	<!-- Team Style One End -->
+
+    <!-- Download Section Start -->
+
+  <section class="download-section" aria-label="File Download Section">
+    <h2 class="download-title">Download Company Profile</h2>
+    <a 
+      href="../wp-content/uploads/2024/ias.pdf" 
+      download="ias.pdf" 
+      class="download-button"
+      role="button"
+      aria-label="Download Dummy PDF file"
+    >
+      Download
+    </a>
+  </section>
+
+    <!-- Download Section End -->
+
 		</div>
 				</div>
 				</div>
@@ -850,7 +1068,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/tolakwp\/wp-admin\/admin-ajax.php"}};
             <div class="row">
                 <div class="col-md-6">
                     <p class="main-footer__copyright">
-                         &copy; Copyright <span class="dynamic-year"></span> By Vision Well</p>
+                         &copy; Copyright <span class="dynamic-year"></span> By DsGroup</p>
                 </div>
                 <div class="col-md-6">
                                             <div class="menu-copyright-menu-container"><ul id="menu-copyright-menu" class="list-unstyled main-footer__bottom__list ml-0">
